@@ -15,7 +15,7 @@
  *
  * Written by Dorian Galvez-Lopez,
  * University of Zaragoza
- * 
+ *
  * Check my website to obtain updates: http://doriangalvez.com
  *
  * \section requirements Requirements
@@ -26,7 +26,7 @@
  * If you use this software in academic works, please cite:
  <pre>
    @@ARTICLE{GalvezTRO12,
-    author={Galvez-Lopez, Dorian and Tardos, J. D.}, 
+    author={Galvez-Lopez, Dorian and Tardos, J. D.},
     journal={IEEE Transactions on Robotics},
     title={Bags of Binary Words for Fast Place Recognition in Image Sequences},
     year={2012},
@@ -57,29 +57,38 @@ namespace DBoW2
 #include "FBrief.h"
 #include "FBRISK.h"
 #include "FORB.h"
+#include "FR2D2.h"
 
 /// ORB Vocabulary
-typedef DBoW2::TemplatedVocabulary<DBoW2::FORB::TDescriptor, DBoW2::FORB> 
+typedef DBoW2::TemplatedVocabulary<DBoW2::FORB::TDescriptor, DBoW2::FORB>
   OrbVocabulary;
 
 /// FORB Database
-typedef DBoW2::TemplatedDatabase<DBoW2::FORB::TDescriptor, DBoW2::FORB> 
+typedef DBoW2::TemplatedDatabase<DBoW2::FORB::TDescriptor, DBoW2::FORB>
   OrbDatabase;
-  
+
 /// BRIEF Vocabulary
-typedef DBoW2::TemplatedVocabulary<DBoW2::FBrief::TDescriptor, DBoW2::FBrief> 
+typedef DBoW2::TemplatedVocabulary<DBoW2::FBrief::TDescriptor, DBoW2::FBrief>
   BriefVocabulary;
 
 /// BRIEF Database
-typedef DBoW2::TemplatedDatabase<DBoW2::FBrief::TDescriptor, DBoW2::FBrief> 
+typedef DBoW2::TemplatedDatabase<DBoW2::FBrief::TDescriptor, DBoW2::FBrief>
   BriefDatabase;
 
 /// BRISK Vocabulary
-typedef DBoW2::TemplatedVocabulary<DBoW2::FBRISK::TDescriptor, DBoW2::FBRISK> 
+typedef DBoW2::TemplatedVocabulary<DBoW2::FBRISK::TDescriptor, DBoW2::FBRISK>
   BRISKVocabulary;
 
 /// BRISK Database
-typedef DBoW2::TemplatedDatabase<DBoW2::FBRISK::TDescriptor, DBoW2::FBRISK> 
+typedef DBoW2::TemplatedDatabase<DBoW2::FBRISK::TDescriptor, DBoW2::FBRISK>
+  BRISKDatabase;
+
+/// R2D2 Vocabulary
+typedef DBoW2::TemplatedVocabulary<DBoW2::FR2D2::TDescriptor, DBoW2::FR2D2>
+  BRISKVocabulary;
+
+/// R2D2 Database
+typedef DBoW2::TemplatedDatabase<DBoW2::FR2D2::TDescriptor, DBoW2::FR2D2>
   BRISKDatabase;
 
 #endif
