@@ -85,11 +85,11 @@ typedef DBoW2::TemplatedDatabase<DBoW2::FBRISK::TDescriptor, DBoW2::FBRISK>
 
 /// R2D2 Vocabulary
 typedef DBoW2::TemplatedVocabulary<DBoW2::FR2D2::TDescriptor, DBoW2::FR2D2>
-  BRISKVocabulary;
+  R2D2Vocabulary;
 
 /// R2D2 Database
 typedef DBoW2::TemplatedDatabase<DBoW2::FR2D2::TDescriptor, DBoW2::FR2D2>
-  BRISKDatabase;
+  R2D2Database;
 
 #endif
 
